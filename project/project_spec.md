@@ -11,4 +11,3 @@ React (https://reactjs.org/)
 Flask (http://flask.pocoo.org/)
 Postgres (https://www.postgresql.org/)
 Heroku (https://www.heroku.com/)
-
