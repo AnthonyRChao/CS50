@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table style="width:100%">
+        <tr>
+            <th>Security</th>
+            <th>Shares</th>
+            <th>Current Price</th>
+            <th>Holding Value</th>
+        </tr>
+
+        {% for stock in stocks %}
+        <tr>
+            <td>{{ stock["security"] }}</td>
+            <td>{{ stock["shares"] }}</td>
+            <td>{{ "${:.2f}".format(stock["price"]) }}</td>
+            <td>{{ "${:.2f}".format(stock["value"]) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>
+        <br></br>
+        Cash Balance: {{ cash }}
+        <br></br>
+        Grand Total: {{ total }}
+    </p>
+
+{% endblock %}

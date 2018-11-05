@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>dom1</title>
+    </head>
+    <body>
+        <form id="demo">
+            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text"/>
+            <input type="submit"/>
+        </form>
+        <script>
+
+            document.getElementById("demo").onsubmit = function () {
+                let name = document.getElementById("name").value;
+                alert(`hello ${name}`);
+            };
+
+        </script>
+    </body>
+
+</html>

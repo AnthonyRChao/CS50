@@ -1,0 +1,55 @@
+Command Line
+
+ls, cd, cd .., cp, rm, rm -r, mv
+
+Big 5 (ls, cd, cp, rm, mv)
+
+Data Types and Variables
+
+Five Primary types of data you'll encounter in C (+2 from CS50)
+
+1. int - 4 bytes of memory (32 bits)
+    unsigned int - double positive range at the expense of negative values
+    short, long, const (other qualifiers)
+
+2. char - store single character, 1 byte, 8 bits
+    A maps to 65 per ASCII, a to 95, 0 to 48
+
+3. float - "real numbers", 4 bytes of memory (32 bits)
+    only can be so precise, float imprecision
+
+4. double - store "real numbers", but double precision, 8 bytes of memory
+    64 bits
+
+5. void - is a type, but not a data  type, if fn doesn't return a value it
+    returns void. void is a placeholder, no paramaters, no return value
+
+CS50 Created:
+
+1. bool (CS50 created - two distinct values, T or F)
+2. string (CS50 created - collection of words, series of characters)
+
+Later:
+
+structs, typedefs...
+
+Creating Variables - define type & name it
+
+int number; // declaration
+number = 17 // assignment
+
+int number = 17; // initialization
+char letter = "M" // initialization
+
+Operators
+
++, -, *, /, =, % (get the remainder)
+
+***loops
+3 kinds
+
+while (do while an expression is true)
+do...while (run code at least once, common to use for user input)
+for (repeat discrete # of times)
+
+

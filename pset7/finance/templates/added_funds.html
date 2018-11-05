@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Funds
+{% endblock %}
+
+{% block main %}
+    <form action="/added_funds" method="post">
+        <div> Successfully added {{ add }} to account. Balance increased from {{ old }} to {{ new }}.</div>
+    </form>
+{% endblock %}

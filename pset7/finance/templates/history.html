@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <table style="width:100%">
+        <tr>
+            <th>Action</th>
+            <th>Security</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Timestamp</th>
+        </tr>
+
+        {% for trade_dict in trades_raw %}
+            <tr>
+                <td>{{ trade_dict['action'] }}</td>
+                <td>{{ trade_dict['security'] }}</td>
+                <td>{{ trade_dict['price'] }}</td>
+                <td>{{ trade_dict['quantity'] }}</td>
+                <td>{{ trade_dict['timestamp'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+
+{% endblock %}

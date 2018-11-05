@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sold
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <div> Successfully sold {{ shares_to_sell }} share(s) of {{ symbol }} at {{ price }} for {{ cash_from_sale }}. Your cash balance is now {{ updated_cash }}. </div>
+    </form>
+{% endblock %}

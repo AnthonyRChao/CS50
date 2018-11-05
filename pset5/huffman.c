@@ -1,0 +1,4 @@
+typedf struct node
+{
+
+}
